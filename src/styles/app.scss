@@ -2,10 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #333;
-  color: #ccc;
 }
 
+.App {
+  background-color: #333;
+  color: #ccc;
+  height: 100vh;
+}
 
+@import "./sideMenu";
+@import "./playlistSong";
 @import "./song";
 @import "./player";

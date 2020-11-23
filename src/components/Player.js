@@ -8,7 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const Player = ({ currSong, isPlaying, setIsPlaying }) => {
-  const [songInfo, setSongInfo] = useState({ currTime: null, duration: null });
+  const [songInfo, setSongInfo] = useState({ currTime: 0, duration: 0 });
 
   const audioRef = useRef(null);
 
@@ -34,11 +34,22 @@ const Player = ({ currSong, isPlaying, setIsPlaying }) => {
     );
   };
 
+  const scrollInputRange = (e) => {
+    audioRef.current.currentTime = e.target.value;
+    setSongInfo({ ...songInfo, currTime: e.target.value });
+  };
+
   return (
     <div className="player">
       <div className="time-line">
         <p>{formatTime(songInfo.currTime)}</p>
-        <input type="range" />
+        <input
+          type="range"
+          min={0}
+          max={songInfo.duration}
+          value={songInfo.currTime}
+          onChange={scrollInputRange}
+        />
         <p>{formatTime(songInfo.duration)}</p>
       </div>
       <div className="play-control">
@@ -51,7 +62,7 @@ const Player = ({ currSong, isPlaying, setIsPlaying }) => {
           className="player-play-btn"
           onClick={playPauseSong}
           size="2x"
-          icon={(isPlaying && faPause) || faPlay}
+          icon={isPlaying ? faPause : faPlay}
         />
         <FontAwesomeIcon
           className="player-forw-btn"
@@ -59,7 +70,12 @@ const Player = ({ currSong, isPlaying, setIsPlaying }) => {
           icon={faForward}
         />
       </div>
-      <audio ref={audioRef} src={currSong.audio} onTimeUpdate={updateTime} />
+      <audio
+        ref={audioRef}
+        src={currSong.audio}
+        onTimeUpdate={updateTime}
+        onLoadedMetadata={updateTime}
+      />
     </div>
   );
 };

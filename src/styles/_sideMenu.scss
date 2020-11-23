@@ -1,0 +1,21 @@
+.SideMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100vh;
+  background: rgba(124,124,124,0.9);
+  overflow-y: scroll;
+  box-shadow: 2px 2px 30px #5d5d5d;
+
+  h2 {
+    text-align: center;
+    color: white;
+  }
+
+  .playlist {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
