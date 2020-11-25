@@ -7,6 +7,12 @@
   background: rgba(124,124,124,0.9);
   overflow-y: scroll;
   box-shadow: 2px 2px 30px #5d5d5d;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  z-index: 3;
+  transform: translateX(-110%);
+  transition: all 0.5s ease;
+  opacity: 0;
 
   h2 {
     text-align: center;
@@ -16,6 +22,37 @@
   .playlist {
     display: flex;
     flex-direction: column;
+    padding: 1rem 0.5rem 2rem 0.5rem;
 
+    h3 {
+      color: yellow;
+      margin: 1rem;
+    }
+
+    .minimizeIcon {
+      cursor: pointer;
+      color: white;
+    }
+    .minimizeIcon:hover {
+      color: yellow;
+    }
+
+    div {
+      transition: all 0.2s ease;
+    }
   }
+
+  p {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+}
+
+.sideIsOpen {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.genreMinimized {
+  display: none;
 }

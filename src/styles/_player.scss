@@ -1,5 +1,5 @@
 .player {
-  min-height: 20vh;
+  //min-height: 15vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,11 +7,16 @@
 }
 
 .time-line {
-  width: 50%;
+  width: 60%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   input {
-    width: 100%;
-    padding: 1rem 0;
+    min-width: 12rem;
+    width: 70%;
+    height: 6px;
+    cursor: pointer;
+    opacity: 0.8;
   }
   p {
     padding: 1rem;
@@ -19,7 +24,7 @@
 }
 
 .play-control {
-  width: 40%;
+  min-width: 17rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,4 +32,8 @@
   svg {
     cursor: pointer;
   }
+  svg:hover {
+    color: #ffff74;
+  }
 }
+

@@ -10,6 +10,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb43d28bf8728.85542184/Imperium-FULL.mp3",
       genre: "Electronic",
+      duration: "2:54",
       id: uuidv4(),
       active: true,
     },
@@ -22,6 +23,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb441a0e17058.27601612/FamilyDay-FULL.mp3",
       genre: "Acoustic",
+      duration: "2:42",
       id: uuidv4(),
       active: false,
     },
@@ -34,6 +36,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb44bf1ae6258.75276194/WhenTheSunRises-FULL.mp3",
       genre: "Cinematic",
+      duration: "2:26",
       id: uuidv4(),
       active: false,
     },
@@ -46,6 +49,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb31453ec1d78.36629401/CinematicHipHop-FULL.mp3",
       genre: "Hip Hop",
+      duration: "2:27",
       id: uuidv4(),
       active: false,
     },
@@ -58,6 +62,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fadae238ef391.61641340/Rescue-FULL.mp3",
       genre: "Electronic",
+      duration: "2:25",
       id: uuidv4(),
       active: false,
     },
@@ -70,6 +75,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fac2d47eb91e7.98585201/TheRevolution-FULL.mp3",
       genre: "Electronic",
+      duration: "2:51",
       id: uuidv4(),
       active: false,
     },
@@ -82,6 +88,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fac32c95e7d65.59812239/PulsingHeart-FULL.mp3",
       genre: "Electronic",
+      duration: "2:27",
       id: uuidv4(),
       active: false,
     },
@@ -94,6 +101,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5faae3cf1e79f8.67598694/DanceForever-FULL.mp3",
       genre: "Electronic",
+      duration: "2:16",
       id: uuidv4(),
       active: false,
     },
@@ -106,6 +114,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa986c12d34e5.82106395/Transformer-FULL.mp3",
       genre: "Electronic",
+      duration: "1:58",
       id: uuidv4(),
       active: false,
     },
@@ -118,6 +127,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb4d695a85f58.07188030/RememberTheTimeFULL.mp3",
       genre: "House",
+      duration: "2:27",
       id: uuidv4(),
       active: false,
     },
@@ -130,6 +140,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa5d551922b81.58182399/ShakeTheBody-FULL.mp3",
       genre: "Electronic",
+      duration: "2:15",
       id: uuidv4(),
       active: false,
     },
@@ -142,6 +153,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa32618506cc3.35346407/Plenum-FULL.mp3",
       genre: "Cinematic",
+      duration: "1:55",
       id: uuidv4(),
       active: false,
     },
@@ -154,6 +166,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa5e27d3ba243.08527923/ComeBackHome-FULL.mp3",
       genre: "Hip Hop",
+      duration: "1:51",
       id: uuidv4(),
       active: false,
     },
@@ -166,6 +179,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/10/5f8f324f22b1e9.36360961/LonelyBoy-FULL.mp3",
       genre: "Electronic",
+      duration: "2:30",
       id: uuidv4(),
       active: false,
     },
@@ -178,6 +192,7 @@ function playList() {
       audio:
         "https://media.hksns.com/wp-content/uploads/edd/2020/10/5f889034698013.22578561/CyberFriends-FULL.mp3",
       genre: "Electronic",
+      duration: "3:10",
       id: uuidv4(),
       active: false,
     },

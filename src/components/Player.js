@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
@@ -7,11 +7,14 @@ import {
   faPause,
 } from "@fortawesome/free-solid-svg-icons";
 
-const Player = ({ currSong, isPlaying, setIsPlaying }) => {
-  const [songInfo, setSongInfo] = useState({ currTime: 0, duration: 0 });
-
-  const audioRef = useRef(null);
-
+const Player = ({
+  currSong,
+  isPlaying,
+  setIsPlaying,
+  audioRef,
+  setSongInfo,
+  songInfo,
+}) => {
   const playPauseSong = () => {
     if (!isPlaying) {
       audioRef.current.play();
@@ -20,12 +23,6 @@ const Player = ({ currSong, isPlaying, setIsPlaying }) => {
       audioRef.current.pause();
       setIsPlaying(false);
     }
-  };
-
-  const updateTime = (e) => {
-    const timeNow = e.target.currentTime;
-    const dur = e.target.duration;
-    setSongInfo({ ...songInfo, currTime: timeNow, duration: dur });
   };
 
   const formatTime = (time) => {
@@ -46,7 +43,7 @@ const Player = ({ currSong, isPlaying, setIsPlaying }) => {
         <input
           type="range"
           min={0}
-          max={songInfo.duration}
+          max={songInfo.duration || 0}
           value={songInfo.currTime}
           onChange={scrollInputRange}
         />
@@ -70,12 +67,6 @@ const Player = ({ currSong, isPlaying, setIsPlaying }) => {
           icon={faForward}
         />
       </div>
-      <audio
-        ref={audioRef}
-        src={currSong.audio}
-        onTimeUpdate={updateTime}
-        onLoadedMetadata={updateTime}
-      />
     </div>
   );
 };
