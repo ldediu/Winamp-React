@@ -14,6 +14,8 @@ const Player = ({
   audioRef,
   setSongInfo,
   songInfo,
+  songs,
+  setCurrSong,
 }) => {
   const playPauseSong = () => {
     if (!isPlaying) {
@@ -36,6 +38,15 @@ const Player = ({
     setSongInfo({ ...songInfo, currTime: e.target.value });
   };
 
+  const changeSong = (dir) => {
+    let currInd = songs.findIndex((sng) => sng.id === currSong.id);
+    if (dir === "forward") {
+      setCurrSong(songs[currInd + 1] || songs[0]);
+    } else if (dir === "backward") {
+      setCurrSong(songs[currInd - 1] || songs[songs.length - 1]);
+    }
+  };
+
   return (
     <div className="player">
       <div className="time-line">
@@ -54,6 +65,7 @@ const Player = ({
           className="player-back-btn"
           size="2x"
           icon={faBackward}
+          onClick={() => changeSong("backward")}
         />
         <FontAwesomeIcon
           className="player-play-btn"
@@ -65,6 +77,7 @@ const Player = ({
           className="player-forw-btn"
           size="2x"
           icon={faForward}
+          onClick={() => changeSong("forward")}
         />
       </div>
     </div>
