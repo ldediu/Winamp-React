@@ -8,9 +8,9 @@ const PlaylistSong = ({
   isPlaying,
   setSongs,
 }) => {
-  const changeSong = () => {
+  const changeSong = async () => {
     const selSong = songs.filter((sng) => sng.id === aSong.id);
-    setCurrSong(selSong[0]);
+    await setCurrSong(selSong[0]);
     const updatedSongs = songs.map((song) => {
       if (song.id === aSong.id) {
         return {
@@ -26,12 +26,13 @@ const PlaylistSong = ({
     });
     setSongs(updatedSongs);
     if (isPlaying) {
-      const playPromise = audioRef.current.play();
-      if (playPromise !== undefined) {
-        playPromise.then((audio) => {
-          audioRef.current.play();
-        });
-      }
+      // const playPromise = audioRef.current.play();
+      // if (playPromise !== undefined) {
+      //   playPromise.then((audio) => {
+      //     audioRef.current.play();
+      //   });
+      // }
+      audioRef.current.play();
     }
   };
 

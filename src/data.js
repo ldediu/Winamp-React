@@ -15,45 +15,6 @@ function playList() {
       active: true,
     },
     {
-      title: "Family Day",
-      cover:
-        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Family-Day-1658371.jpg",
-      info:
-        "A beautiful acoustic track with a heartwarming folk sound. The instrumental has an emotional aspect that gently tugs the listeners' heartstrings. A suitable choice for any gentle, family-oriented content.",
-      audio:
-        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb441a0e17058.27601612/FamilyDay-FULL.mp3",
-      genre: "Acoustic",
-      duration: "2:42",
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      title: "When The Sun Rises",
-      cover:
-        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/When-The-Sun-Rises-1658425.jpg",
-      info:
-        "An elegant background instrumental with a brilliantly arranged orchestral melody. This graceful musical composition is suitable for cinematic content, Christmas content, Halloween content, and any other projects that require a festive acoustic sound.",
-      audio:
-        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb44bf1ae6258.75276194/WhenTheSunRises-FULL.mp3",
-      genre: "Cinematic",
-      duration: "2:26",
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      title: "Cinematic Hip Hop",
-      cover:
-        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Cinematic-Hip-Hop-1657328.jpg",
-      info:
-        "A calm Hip-hop track with a chilled, laid-back vibe. The melodic rhythm has an appealing quality that makes it suitable for cinematic content, web videos, ads, drone footage, online reviews, and many other multimedia projects,",
-      audio:
-        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb31453ec1d78.36629401/CinematicHipHop-FULL.mp3",
-      genre: "Hip Hop",
-      duration: "2:27",
-      id: uuidv4(),
-      active: false,
-    },
-    {
       title: "Rescue",
       cover:
         "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Rescue-1653074.jpg",
@@ -119,19 +80,6 @@ function playList() {
       active: false,
     },
     {
-      title: "Remember The Time",
-      cover:
-        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Remember-The-Time-1649863.jpg",
-      info:
-        "Remember The TimeAn upbeat electro track with a house beat that is reminiscent of the disco era. This dance sound is ideal for bold, fun, and positive content.",
-      audio:
-        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb4d695a85f58.07188030/RememberTheTimeFULL.mp3",
-      genre: "House",
-      duration: "2:27",
-      id: uuidv4(),
-      active: false,
-    },
-    {
       title: "Shake The Body",
       cover:
         "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Shake-The-Body-1647759.jpg",
@@ -141,32 +89,6 @@ function playList() {
         "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa5d551922b81.58182399/ShakeTheBody-FULL.mp3",
       genre: "Electronic",
       duration: "2:15",
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      title: "Plenum",
-      cover:
-        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Plenum-1646175.jpg",
-      info:
-        "A captivating cinematic track that is perfect for any project that has a dramatic or suspenseful theme.",
-      audio:
-        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa32618506cc3.35346407/Plenum-FULL.mp3",
-      genre: "Cinematic",
-      duration: "1:55",
-      id: uuidv4(),
-      active: false,
-    },
-    {
-      title: "Come Back Home",
-      cover:
-        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Come-Back-Home-1647806.jpg",
-      info:
-        "A mellow Hip-Hop track with a melodic rhythm that includes orchestral elements. The brilliant blend of instruments and memorable beat patterns make this an ideal choice for vibrant, trendy, urban content.",
-      audio:
-        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa5e27d3ba243.08527923/ComeBackHome-FULL.mp3",
-      genre: "Hip Hop",
-      duration: "1:51",
       id: uuidv4(),
       active: false,
     },
@@ -193,6 +115,84 @@ function playList() {
         "https://media.hksns.com/wp-content/uploads/edd/2020/10/5f889034698013.22578561/CyberFriends-FULL.mp3",
       genre: "Electronic",
       duration: "3:10",
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      title: "Family Day",
+      cover:
+        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Family-Day-1658371.jpg",
+      info:
+        "A beautiful acoustic track with a heartwarming folk sound. The instrumental has an emotional aspect that gently tugs the listeners' heartstrings. A suitable choice for any gentle, family-oriented content.",
+      audio:
+        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb441a0e17058.27601612/FamilyDay-FULL.mp3",
+      genre: "Acoustic",
+      duration: "2:42",
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      title: "When The Sun Rises",
+      cover:
+        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/When-The-Sun-Rises-1658425.jpg",
+      info:
+        "An elegant background instrumental with a brilliantly arranged orchestral melody. This graceful musical composition is suitable for cinematic content, Christmas content, Halloween content, and any other projects that require a festive acoustic sound.",
+      audio:
+        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb44bf1ae6258.75276194/WhenTheSunRises-FULL.mp3",
+      genre: "Cinematic",
+      duration: "2:26",
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      title: "Plenum",
+      cover:
+        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Plenum-1646175.jpg",
+      info:
+        "A captivating cinematic track that is perfect for any project that has a dramatic or suspenseful theme.",
+      audio:
+        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa32618506cc3.35346407/Plenum-FULL.mp3",
+      genre: "Cinematic",
+      duration: "1:55",
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      title: "Cinematic Hip Hop",
+      cover:
+        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Cinematic-Hip-Hop-1657328.jpg",
+      info:
+        "A calm Hip-hop track with a chilled, laid-back vibe. The melodic rhythm has an appealing quality that makes it suitable for cinematic content, web videos, ads, drone footage, online reviews, and many other multimedia projects,",
+      audio:
+        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb31453ec1d78.36629401/CinematicHipHop-FULL.mp3",
+      genre: "Hip Hop",
+      duration: "2:27",
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      title: "Come Back Home",
+      cover:
+        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Come-Back-Home-1647806.jpg",
+      info:
+        "A mellow Hip-Hop track with a melodic rhythm that includes orchestral elements. The brilliant blend of instruments and memorable beat patterns make this an ideal choice for vibrant, trendy, urban content.",
+      audio:
+        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fa5e27d3ba243.08527923/ComeBackHome-FULL.mp3",
+      genre: "Hip Hop",
+      duration: "1:51",
+      id: uuidv4(),
+      active: false,
+    },
+    {
+      title: "Remember The Time",
+      cover:
+        "https://d1y5x10xyo8lk6.cloudfront.net/wp-content/uploads/edd/2020/11/Remember-The-Time-1649863.jpg",
+      info:
+        "Remember The TimeAn upbeat electro track with a house beat that is reminiscent of the disco era. This dance sound is ideal for bold, fun, and positive content.",
+      audio:
+        "https://media.hksns.com/wp-content/uploads/edd/2020/11/5fb4d695a85f58.07188030/RememberTheTimeFULL.mp3",
+      genre: "House",
+      duration: "2:27",
       id: uuidv4(),
       active: false,
     },

@@ -22,6 +22,12 @@ function App() {
     setSongInfo({ ...songInfo, currTime: timeNow, duration: dur });
   };
 
+  const autoPlayNext = async () => {
+    let currInd = songs.findIndex((sng) => sng.id === currSong.id);
+    await setCurrSong(songs[currInd + 1] || songs[0]);
+    if (isPlaying) audioRef.current.play();
+  };
+
   return (
     <div className="App">
       <FontAwesomeIcon
@@ -48,12 +54,14 @@ function App() {
         songInfo={songInfo}
         songs={songs}
         setCurrSong={setCurrSong}
+        setSongs={setSongs}
       />
       <audio
         ref={audioRef}
         src={currSong.audio}
         onTimeUpdate={updateTime}
         onLoadedMetadata={updateTime}
+        onEnded={autoPlayNext}
       />
     </div>
   );

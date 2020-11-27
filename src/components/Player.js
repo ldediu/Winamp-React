@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
@@ -16,7 +16,25 @@ const Player = ({
   songInfo,
   songs,
   setCurrSong,
+  setSongs,
 }) => {
+  useEffect(() => {
+    const updatedSongs = songs.map((song) => {
+      if (song.id === currSong.id) {
+        return {
+          ...song,
+          active: true,
+        };
+      } else {
+        return {
+          ...song,
+          active: false,
+        };
+      }
+    });
+    setSongs(updatedSongs);
+  }, [currSong]);
+
   const playPauseSong = () => {
     if (!isPlaying) {
       audioRef.current.play();
@@ -38,12 +56,15 @@ const Player = ({
     setSongInfo({ ...songInfo, currTime: e.target.value });
   };
 
-  const changeSong = (dir) => {
+  const changeSong = async (dir) => {
     let currInd = songs.findIndex((sng) => sng.id === currSong.id);
     if (dir === "forward") {
-      setCurrSong(songs[currInd + 1] || songs[0]);
+      await setCurrSong(songs[currInd + 1] || songs[0]);
     } else if (dir === "backward") {
-      setCurrSong(songs[currInd - 1] || songs[songs.length - 1]);
+      await setCurrSong(songs[currInd - 1] || songs[songs.length - 1]);
+    }
+    if (isPlaying) {
+      audioRef.current.play();
     }
   };
 
@@ -58,7 +79,7 @@ const Player = ({
           value={songInfo.currTime}
           onChange={scrollInputRange}
         />
-        <p>{formatTime(songInfo.duration)}</p>
+        <p>{songInfo.duration ? formatTime(songInfo.duration) : "0.00"}</p>
       </div>
       <div className="play-control">
         <FontAwesomeIcon
