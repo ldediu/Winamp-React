@@ -44,7 +44,7 @@ function App() {
         setSongs={setSongs}
         isSideMenuOpen={isSideMenuOpen}
       />
-      <Song currSong={currSong} />
+      <Song currSong={currSong} isPlaying={isPlaying} />
       <Player
         currSong={currSong}
         setIsPlaying={setIsPlaying}

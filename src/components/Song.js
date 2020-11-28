@@ -1,9 +1,15 @@
 import React from "react";
 
-const Song = ({ currSong }) => {
+const Song = ({ currSong, isPlaying }) => {
   return (
     <div className="song-cont">
-      <img src={currSong.cover} alt="albumCover"></img>
+      <div className="imgCont">
+        <img
+          src={currSong.cover}
+          alt="albumCover"
+          className={`${isPlaying ? "spinning" : ""}`}
+        />
+      </div>
       <h2>{currSong.title}</h2>
     </div>
   );

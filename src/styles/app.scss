@@ -38,6 +38,12 @@ body {
   }
 }
 
+@media screen and (max-width: 650px) {
+  .hamIcon {
+    z-index: 4;
+  }
+}
+
 @import "./sideMenu";
 @import "./playlistSong";
 @import "./song";
