@@ -9,6 +9,7 @@ const Song = ({ currSong, isPlaying }) => {
           alt="albumCover"
           className={`${isPlaying ? "spinning" : ""}`}
         />
+        <div className="imgCenter"></div>
       </div>
       <h2>{currSong.title}</h2>
     </div>

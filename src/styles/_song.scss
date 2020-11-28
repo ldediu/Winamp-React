@@ -8,6 +8,8 @@
     position: relative;
     width: 20rem;
     height: 20rem;
+    border-radius: 50%;
+    box-shadow: 5px 3px 25px rgb(20,20,20);
   }
   .imgCont img {
     width: inherit;
@@ -22,6 +24,17 @@
   }
   .imgCont .spinning {
     animation-play-state: running;
+  }
+  .imgCont .imgCenter {
+    position: absolute;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    z-index: 2;
+    background: gray;
+    opacity: 0.25;
+    top: calc(50% - 3.5rem);
+    left: calc(50% - 3.5rem);
   }
 
   h2 {
