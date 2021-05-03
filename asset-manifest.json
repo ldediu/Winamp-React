@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Winamp-React/static/css/main.e3df1b82.chunk.css",
+    "main.js": "/Winamp-React/static/js/main.971ef87e.chunk.js",
+    "main.js.map": "/Winamp-React/static/js/main.971ef87e.chunk.js.map",
+    "runtime-main.js": "/Winamp-React/static/js/runtime-main.53baa6d8.js",
+    "runtime-main.js.map": "/Winamp-React/static/js/runtime-main.53baa6d8.js.map",
+    "static/js/2.dbf46262.chunk.js": "/Winamp-React/static/js/2.dbf46262.chunk.js",
+    "static/js/2.dbf46262.chunk.js.map": "/Winamp-React/static/js/2.dbf46262.chunk.js.map",
+    "static/js/3.568c5195.chunk.js": "/Winamp-React/static/js/3.568c5195.chunk.js",
+    "static/js/3.568c5195.chunk.js.map": "/Winamp-React/static/js/3.568c5195.chunk.js.map",
+    "index.html": "/Winamp-React/index.html",
+    "static/css/main.e3df1b82.chunk.css.map": "/Winamp-React/static/css/main.e3df1b82.chunk.css.map",
+    "static/js/2.dbf46262.chunk.js.LICENSE.txt": "/Winamp-React/static/js/2.dbf46262.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.53baa6d8.js",
+    "static/js/2.dbf46262.chunk.js",
+    "static/css/main.e3df1b82.chunk.css",
+    "static/js/main.971ef87e.chunk.js"
+  ]
+}
